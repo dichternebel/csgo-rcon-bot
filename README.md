@@ -19,7 +19,7 @@ In order to build and run the bot you need to download and install following in 
 
 * [Node.js](https://nodejs.dev/) >= v12.x (developed with v15.7.0)
 * [rcon-cli]() - matching you target platform
-* `[git clone]` or [download](https://github.com/dichternebel/csgo-rcon-bot/archive/main.zip) bot as zip package
+* `git clone` or [download](https://github.com/dichternebel/csgo-rcon-bot/archive/main.zip) bot as zip package
 
 ### Build
 
@@ -43,9 +43,9 @@ All RCON parameters are currently configured in `/app/api-service.js`. That is w
 ### Installation
 
 * On Linux Ubuntu
-    * copy the `.service` to /etc/systemd/system 
+    * copy the `.service` file to /etc/systemd/system 
     * `sudo systemctl enable csgo-rcon-bot.service`
-    * `sudo systemctl start application`
+    * `sudo systemctl start csgo-rcon-bot.service`
 
 * On Windows
     * download the [NSSM](https://nssm.cc/download) and unzip
