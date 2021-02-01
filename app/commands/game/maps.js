@@ -7,6 +7,7 @@ module.exports =
 	execute: async (config, discordConfig, service, command, args) =>
 	{
         try {
+            command = 'maps *';
             const response = await apiService.get(config, discordConfig, command);
             const embed = service.getMapsEmbed(response);
 
