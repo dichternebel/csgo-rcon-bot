@@ -18,7 +18,7 @@ The purpose of this bot is to be run side-by-side with your CS:GO server. Althou
 In order to build and run the bot you need to download and install following in advance
 
 * [Node.js](https://nodejs.dev/) >= v12.x (developed with v15.7.0)
-* [rcon-cli]() - matching you target platform
+* [rcon-cli](https://github.com/itzg/rcon-cli) - matching you target platform
 * `git clone` or [download](https://github.com/dichternebel/csgo-rcon-bot/archive/main.zip) bot as zip package
 
 ### Build
