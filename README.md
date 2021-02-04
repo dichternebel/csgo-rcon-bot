@@ -1,13 +1,13 @@
-# csgo-rcon-bot [![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/dichternebel/csgo-rcon-bot/blob/main/LICENSE.md)[![PR's Welcome](https://img.shields.io/badge/PRs%20-welcome-brightgreen.svg)](http://makeapullrequest.com)
+# csgo-rcon-bot (local) [![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/dichternebel/csgo-rcon-bot/blob/main/LICENSE.md) [![PR's Welcome](https://img.shields.io/badge/PRs%20-welcome-brightgreen.svg)](http://makeapullrequest.com)
 This discord bot can execute RCON commands on CS:GO/SRCDS servers.
 
 > This discord bot was highly inspired by the [srcds-discord-bot](https://github.com/Retr0-01/srcds-discord-bot) by [Retr0-01](https://github.com/Retr0-01)
 
 ## Getting started
 
-The purpose of this bot is to be run side-by-side with your CS:GO server. Although it can be run anywhere I highly recommend not to use it in a public manner. There is only minimal security enabled and configuration files are stored locally in plain text.
+The purpose of this bot is to be run side-by-side with your CS:GO server. Although it can be run anywhere **I recommend not to use it in a public manner**. There is only minimal security enabled and configuration files are stored locally in plain text.
 
-> I am currently working on a more complex, more secure 3-tier version of this bot to be published soon. Feel free to [invite that bot](https://discord.com/oauth2/authorize?client_id=797866820996169779&permissions=27712&scope=bot) to your server. 
+> If you are not planning to develop or host this bot by yourself you might want to take a look at the already running [3-tier version](https://www.github.com/dichternebel/daddel-bot) of this project and [invite that bot](https://discord.com/oauth2/authorize?client_id=797866820996169779&permissions=27712&scope=bot) to your discord server. 
 
 ### Prerequisites
 
