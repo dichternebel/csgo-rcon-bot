@@ -7,7 +7,7 @@ This discord bot can execute RCON commands on CS:GO/SRCDS servers.
 
 The purpose of this bot is to be run side-by-side with your CS:GO server. Although it can be run anywhere I highly recommend not to use it in a public manner. There is only minimal security enabled and configuration files are stored locally in plain text.
 
-> I am currently working on a more complex, more secure 3-tier version of this bot to be published soon. Feel free to [invite that bot](https://discord.com/oauth2/authorize?client_id=797866820996169779&permissions=10304&scope=bot) to your server. 
+> I am currently working on a more complex, more secure 3-tier version of this bot to be published soon. Feel free to [invite that bot](https://discord.com/oauth2/authorize?client_id=797866820996169779&permissions=27712&scope=bot) to your server. 
 
 ### Prerequisites
 
