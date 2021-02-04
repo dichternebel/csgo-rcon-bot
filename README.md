@@ -1,7 +1,5 @@
-# csgo-rcon-bot
+# csgo-rcon-bot [![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/dichternebel/csgo-rcon-bot/blob/main/LICENSE.md)[![PR's Welcome](https://img.shields.io/badge/PRs%20-welcome-brightgreen.svg)](http://makeapullrequest.com)
 This discord bot can execute RCON commands on CS:GO/SRCDS servers.
-[![Licensed under the MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/dichternebel/csgo-rcon-bot/blob/main/LICENSE.md)
-[![PR's Welcome](https://img.shields.io/badge/PRs%20-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 > This discord bot was highly inspired by the [srcds-discord-bot](https://github.com/Retr0-01/srcds-discord-bot) by [Retr0-01](https://github.com/Retr0-01)
 
@@ -28,7 +26,7 @@ In order to build and run the bot you need to download and install following in 
 ### Configuration
 
 * for local development open the `/.env` file and configure your local settings
-* for deployment use either the `/config/csgo-rcon-bot.service` file or the `/config/start.bat`
+* for deployment edit either the `/config/csgo-rcon-bot.service` file or the `/config/start.bat`
 
 ### Customization
 
