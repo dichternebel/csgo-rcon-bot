@@ -26,7 +26,7 @@ In order to build and run the bot you need to download and install following in 
 ### Configuration
 
 * for local development open the `/.env` file and configure your local settings
-* for deployment edit either the `/config/csgo-rcon-bot.service` file or the `/config/start.bat`
+* for deployment edit either the `/server/csgo-rcon-bot.service` file or the `/server/start.bat`
 
 ### Customization
 
@@ -39,11 +39,11 @@ Adding new commands or changing existing can be done by simply adding/changing c
 ### Installation
 
 * On Linux Ubuntu
-    * copy the `.service` file to /etc/systemd/system 
+    * copy the edited `/server/csgo-rcon-bot.service` file to /etc/systemd/system 
     * `sudo systemctl enable csgo-rcon-bot.service`
     * `sudo systemctl start csgo-rcon-bot.service`
 
 * On Windows
     * download the [NSSM](https://nssm.cc/download) and unzip
     * `nssm install csgo-rcon-bot`
-    * Path to where the `start.bat` is located
+    * Path to where the edited `start.bat` is located
