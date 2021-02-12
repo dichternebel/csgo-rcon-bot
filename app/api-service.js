@@ -4,7 +4,7 @@ const exec = util.promisify(require('child_process').exec);
 module.exports =
 {
     get: async (config, discordConfig, command, param) => {
-        let rconCommand = ` --host ${discordConfig.get('server')} --port ${discordConfig.get('port')} --password ${discordConfig.get('password')} ${command} `;
+        let rconCommand = ` --host ${discordConfig.get('server')} --port ${discordConfig.get('port')} --password "${discordConfig.get('password')}" ${command} `;
         if (param) rconCommand += param;
 
         try {
