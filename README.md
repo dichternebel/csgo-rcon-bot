@@ -13,30 +13,49 @@ The purpose of this bot is to be run side-by-side with your CS:GO server. Althou
 
 * Get a discord bot for your account at https://discord.com/developers/applications
 
-In order to build and run the bot you need to download and install following in advance
+In order to build and run the bot you need following
 
 * [Node.js](https://nodejs.dev/) >= v12.x (developed with v15.7.0)
 * [rcon-cli](https://github.com/itzg/rcon-cli) - matching your target platform
 * `git clone` or [download](https://github.com/dichternebel/csgo-rcon-bot/archive/main.zip) bot as zip package
 
-### Build
+### Step by step test-run on Linux Ubuntu
 
-* unzip and run `npm i`
+Log into Ubuntu using ssh with a sudo-enabled user into ~/ (home) and execute following by changing the version of nodejs and rcon-cli accordingly:
+
+```bash
+sudo apt-get update
+curl -fsSL https://deb.nodesource.com/setup_15.x | sudo -E bash -
+sudo apt-get install -y nodejs
+git clone https://github.com/dichternebel/csgo-rcon-bot.git --depth=1
+cd csgo-rcon-bot
+npm i
+mkdir bin && cd bin
+wget https://github.com/itzg/rcon-cli/releases/download/1.4.8/rcon-cli_1.4.8_linux_amd64.tar.gz
+tar xf rcon-cli_1.4.8_linux_amd64.tar.gz
+cd ..
+nano .env
+```  
+Change at least these two settings:  
+```bash
+BOT_TOKEN="YouVerySecretBotTokenGoesHere"
+RCON_CLI_PATH="~/csgo-rcon-bot/bin/rcon-cli"
+```  
+Run the bot:  
+```bash
+node index.js
+```
 
 ### Configuration
 
-* for local development open the `/.env` file and configure your local settings
-* for deployment edit either the `/server/csgo-rcon-bot.service` file or the `/server/start.bat`
+* for local development open the `/.env` file and configure your local settings as described above
+* for deployment edit either the `/server/csgo-rcon-bot.service` file or the `/server/start.bat` matching your setup
 
 ### Customization
 
 Adding new commands or changing existing can be done by simply adding/changing command files to the `/app/commands/game/` folder. You just have to respect some methods. Copy one file as a template to get started.
 
-### Run
-
-`node ./index.js`
-
-### Installation
+### Installation / Run as service
 
 * On Linux Ubuntu
     * copy the edited `/server/csgo-rcon-bot.service` file to /etc/systemd/system 
