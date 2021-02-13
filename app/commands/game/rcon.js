@@ -16,7 +16,7 @@ module.exports =
                 param = args.join(' ');
             }
 
-            const response = await apiService.get(config, discordConfig, command, param);
+            const response = await apiService.get(config, discordConfig, param);
             const messageTitle = "CS:GO Server RCON";
             const embed = service.getRichEmbed(messageTitle, response);
 
