@@ -14,7 +14,7 @@
   "dependencies": {
     "child_process": "^1.0.2",
     "conf": "^9.0.2",
-    "discord.js": "^12.5.1",
+    "discord.js": "^12.5.3",
     "dotenv": "^8.2.0",
     "escape-markdown": "^1.0.4",
     "fs": "0.0.1-security",
