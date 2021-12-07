@@ -224,7 +224,7 @@ class DiscordService {
             let content = collected.array()[0].content.trim().toLowerCase();
             // entered a number?
             if (content === 's' || !isNaN(content)) {
-                if (content != 's') discordConfiguration.set('port', content);
+                if (content != 's') discordConfiguration.set('port', Number(content));
                 return this.sendMessageToContext(
                     messageContext,
                     "What's the CS:GO server RCON password? [`s` = skip]\n*currently ` " + escape(currentPassword) + " `*",
